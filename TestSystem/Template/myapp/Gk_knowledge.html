@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+    <title>Question-Paper</title>
+    <script>
+ 
+        console.log('hello world')
+        const timer=document.getElementById('displaytimer')
+        console.log(timer.textContent);
+        const inputtag = document.getElementById('timer')
+
+        t=0
+        setInterval(()=>{
+            t+=1
+            timer.innerHTML ="<b>Timer: " +t+" seconds</b>"
+            inputtag.value = t
+        },1000)
+    </script></head>
+
+<body>
+    <div class="container-fluid">
+        <div class="row">
+            <div class="col-md-12" style="text-align: center;">
+                <a href="http://localhost:8000/logout/" class="btn btn-danger btn-lg"
+                    style="margin-left: 90%; margin-top: 20px;">Logout</a>
+                <h1><u>Multiple Choice Question</u></h1>
+            </div>
+        </div>
+        <div align="right " id="displaytimer"><b>Timer: 0 seconds</b></div>
+        <div class="col-md-12">
+            <form action="http://localhost:8000/quizresult/" method="post">
+                {% csrf_token %}
+                {% for q in GK_Knowledges %}
+                <div class="form-group">
+                    <label for="question">
+                        {{q.Sr_No}}. {{q.Question}}
+                    </label>
+                </div>
+                <div class="form-check">
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="{{q.Group}}" value="{{q.Option_a}}">
+                        <label class="form-check-lable" for="radio1">{{q.Option_a}}</label>                   
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="{{q.Group}}" value="{{q.Option_b}}">
+                        <label class="form-check-lable" >{{q.Option_b}}</label>                   
+                    </div>
+                    <div class="form-check">
+                        <input class="form-check-input" type="radio" name="{{q.Group}}" value="{{q.Option_c}}">
+                        <label class="form-check-lable" >{{q.Option_c}}</label>                   
+                    </div>
+                </div>
+                {% endfor %}
+                <button type="submit" id="b1" class="btn btn-primary btn-lg" style="margin-left: 45%; margin-top: 20px;">Submit</button>
+                <button type="reset" id="b1" class="btn btn-warning btn-lg" style="margin-left: 10%; margin-top: 20px;">Reset</button>
+            </form>
+        </div>
+    </div>
+    </div>
+</body>
+
+</html>

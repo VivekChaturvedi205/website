@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/Sign_up.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+    <title>Login-Success</title>
+</head>
+
+<body>
+    {% if error %}
+    <h2 style="color: red;">{{error}}</h2>
+    {% endif %}
+    <div class="container">
+        <div class="row">
+            <div class="col-md-2 mt-3"><a href="http://localhost:8000/logout/" class="btn btn-primary btn-lg">UserName</a></div>
+            <div class="col-md-2 mt-3"><a href="http://localhost:8000/logout/" class="btn btn-warning btn-lg">Home</a></div>
+            <div class="col-md-2 mt-3"><a href="http://localhost:8000/logout/" class="btn btn-success btn-lg">History</a></div>
+            <div class="col-md-2 mt-3"><a href="http://localhost:8000/logout/" class="btn btn-secondary btn-lg">Update</a></div>
+            <div class="col-md-2 mt-3"><a href="http://localhost:8000/logout/" class="btn btn-info btn-lg">My Account</a></div>
+            <div class="col-md-2 mt-3"><a href="http://localhost:8000/logout/" class="btn btn-danger btn-lg">Logout</a></div>
+        </div>
+        <div class="row mt-2" style="color:green">
+            <div class="col" align="center"><h1>Login Sucessfully!!</h1></div>
+            </div>
+        
+        <a href="http://localhost:8000/quiz/" class="btn btn-success btn-lg" style="margin-left: 45%; margin-top: 20px;">Give-Test</a>
+    </div>
+</body>
+
+</html>

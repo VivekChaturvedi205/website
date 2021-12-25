@@ -1,0 +1,243 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/Index1.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+    <script src="{% static 'Javascript/Image.js' %}"></script>
+    <title>Online-Test-Website</title>
+</head>
+
+
+<body>
+    <!-- header Start -->
+    <div class="container-fluid">
+        <div class="row" id="main-1">
+            <ul>
+                <li><a href="tel:+91 123456789" class="hover-line"><i class="fas fa-mobile-alt"></i> +91 123 456 789</a>
+                </li>
+                <li><a href="mailto:support@gmail.com" class="hover-line"> <i class="fas fa-envelope"></i>
+                        support@gmail.com</a></li>
+            </ul>
+        </div>
+        <div class="row" id="main-1">
+            <div class="col-md-2 text-md-center"><i class="fab fa-reddit fa-7x"
+                    style="color:yellow;margin-top: 5px;"></i></div>
+            <div class="col-md-10 text-md-center">
+                <ul>
+                    <li id="list"><a href="http://localhost:8000/" class="hover-line">Home</a></li>
+                    <li id="list"><a href="#about_us" class="hover-line">About us</a></li>
+                    <li id="list"><a href="http://localhost:8000/client_list/" class="hover-line">Client List</a></li>
+                    <li id="list"><a href="http://localhost:8000/login/" class="hover-line">Student-Login</a></li>
+                    <li id="list"><a href="http://localhost:8000/admin/" class="hover-line">Tutor-Login(Admin)</a></li>
+                    <li id="list"><a href="#contact" class="hover-line">Contact us</a></li>
+                    <li id="list"><a href="" class="hover-line">Update Password</a></li>
+                </ul>
+            </div>
+        </div>
+        <!-- header End -->
+        <div class="row">
+            <div class="maindiv">
+                <h1 style="text-align: center;margin-top: 200px;color:black;background-color:#80ced6"> <b>Here is Sign
+                        up and then login to Give the <br>
+                        test and the same time the website will provide result you are pass or not......</b></h1>
+                <a href="http://localhost:8000/Sign-up/" class="btn btn-warning btn-lg" style="margin-left:50%;"> Sign
+                    up</a>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md" id="main-2">
+                <h1 align="center" style="margin-top: 10px;" id="about_us">About us</h1>
+                <p align="center" style="font-size: 20px;">
+                    Online examination is conducting a test online to measure the knowledge of the participants on a
+                    given topic. In the olden days, everybody had to gather in a classroom at the same time to take <br>
+                    an
+                    exam. With online examination students can do the exam online,<br> in their own time, with their own
+                    device, regardless of where they live. You only need a browser<br> and an internet connection. </p>
+            </div>
+        </div>
+        <div class="row" id="main-2">
+            <div class="col-md-3" style="text-align:center;"><i class="fas fa-bullhorn fa-5x">
+                    <h3>Speaker</h3>
+                </i></div>
+            <div class="col-md-3" style="text-align:center;"><i class="far fa-bell fa-5x">
+                    <h3>Notification</h3>
+                </i></div>
+            <div class="col-md-3" style="text-align:center;"><i class="fab fa-accusoft fa-5x">
+                    <h3>Books</h3>
+                </i></div>
+            <div class="col-md-3" style="text-align:center;"><i class="fab fa-font-awesome-flag fa-5x">
+                    <h3>Flags</h3>
+                </i></div>
+        </div>
+        <div class="row" id="main-3">
+            <div class="col-md-3" style="text-align:center; margin-top: 10px;">
+                <h4> G K Knowledge
+                </h4>
+                <p>As we are aware that General Knowledge (GK) is a very important area in all the competitive exams
+                    held in
+                    the country.</p>
+            </div>
+            <div class="col-md-3" style="text-align:center; margin-top: 10px;">
+                <h4>Mathmetical Reasoning
+                </h4>
+                <p>Reasoning in maths is the process of applying logical and critical thinking to a mathematical problem
+                    in order to work out the correct strategy to use (and as importantly, not to use) in reaching a
+                    solution.</p>
+            </div>
+            <div class="col-md-3" style="text-align:center; margin-top: 10px;">
+                <h4>
+                    English Aptitude
+                </h4>
+                <p>
+                    The definition of aptitude is a natural skill or talent.
+                </p>
+            </div>
+            <div class="col-md-3" style="text-align:center; margin-top: 10px;">
+                <h4>Traffic Signs</h4>
+                <p>
+                    Traffic Signs or Road Signs are signs erected at the side of roads to provide information to road
+                    users. Pictorial signs are used as symbols in place of words. As control devices for traffic, signs
+                    need full attention, respect and adequate driver's response. There are three basic types of traffic
+                    signs
+                </p>
+            </div>
+        </div>
+        <div class="row">
+            <div class="col-md-5" style="background-color: black;">
+                <div class="mapouter">
+                    <div class="gmap_canvas"><iframe class="gmap_iframe" frameborder="0" scrolling="no" marginheight="0"
+                            marginwidth="0"
+                            src="https://maps.google.com/maps?width=600&amp;height=400&amp;hl=en&amp;q=Dabua Colony NIT Faridabad &amp;t=&amp;z=14&amp;ie=UTF8&amp;iwloc=B&amp;output=embed"></iframe><a
+                            href="https://www.fridaynightfunkin.net/">Friday Night Funkin Download</a></div>
+                </div>
+            </div>
+            <div class="col-md-7" style="background-color: yellow;">
+                <form action="http://localhost:8000/saveclient/" method="post">
+                    {% csrf_token %}
+                    <div id="head" style="text-align: center;">
+                        <i class="fas fa-users fa-4x"></i>
+                    </div>
+                    <div class="form-group">
+                        <label><b>First Name</b></label>
+                        <input type="text" name="First" class="form-control form-control-sm">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Last Name</b></label>
+                        <input type="text" name="Last" class="form-control form-control-sm">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Contact No.</b></label>
+                        <input type="text" name="Phone" class="form-control form-control-sm">
+                    </div>
+                    <div class="form-group">
+                        <label><b>Write your Query:-</b></label>
+                        <textarea name="Query" class="form-control form-control-sm"></textarea>
+                    </div>
+                    <div class="form-group">
+                        <input type="submit" name="" class="form-control form-control-sm btn-primary">
+                    </div>
+
+                </form>
+            </div>
+        </div>
+        <div class="row" style="background-color: black; color: white;" id="contact">
+            <div class="col-md-3">
+                <h5></h5>
+                <h5>Features</h5>
+                <h5>Exams</h5>
+                <h5>Privacy policy</h5>
+                <h5>Quiz</h5>
+            </div>
+            <div class="col-md-3">
+                <h5></h5>
+                <h5>Contact No:-</h5>
+                <h5>+91 9811694732</h5>
+                <h5>Mail-Id:-</h5>
+                <h5>vk126789@gmail.com</h5>
+            </div>
+            <div class="col-md-3">
+                <h5></h5>
+                <h5>Address:-</h5>
+                <h5>D-98 Dhana Niwas </h5>
+                <h5>Sec-50 (Dabua Colony)</h5>
+                <h5>NIT Faridabad, 121001</h5>
+            </div>
+            <div id="icon" class="col-md-3" style="color: white;">
+                <h3 style="margin-left: 30px;"><i class="fab fa-facebook-square fa-0x"
+                        style="color:blue; background-color: white;"></i> <i class="fab fa-instagram-square fa-0x"
+                        style="color:red;background-color: white;"></i> <a
+                        href="linkedin.com/in/vivek-chaubey-10a34a1bb"><i class="fab fa-linkedin fa-0x"
+                            style="color:blue;background-color: white;"></i></a> <i class="fab fa-twitter-square fa-0x"
+                        style="color:blue ;background-color: white;"></i> <i class="fab fa-github-square fa-0x"
+                        style="color:darkslategray;background-color: white;"></i> </h3>
+            </div>
+
+        </div>
+        <div class="row" style="background-color: yellow; color:black;text-align: right;">
+            <div class="col-md">
+                Copyright @ModernPk
+            </div>
+        </div>
+    </div>
+    <div class="slider-box">
+        <div id="slider">
+            <img src="{% static 'Images/main_bgg.jpg' %}" alt="no image found">
+            <img src="{% static 'Images/main_bg1.jpg' %}" alt="no image found">
+            <img src="{% static 'Images/main_bg2.jpg' %}" alt="no image found">
+            <img src="{% static 'Images/main_bg4.jpg' %}" alt="no image found">
+        </div>
+        <div class="indicators">
+            <span id="btn1" class="active"></span>
+            <span id="btn2"></span>
+            <span id="btn3"></span>
+            <span id="btn4"></span>
+        </div>
+    </div>
+</body>
+<script>
+    var slide = document.getElementById("slider");
+    var btn1 = document.getElementById("btn1");
+    var btn2 = document.getElementById("btn2");
+    var btn3 = document.getElementById("btn3");
+    var btn4 = document.getElementById("btn4");
+
+    btn1.onclick = function () {
+        slide.style.transform = "translateX(0px)"
+        btn1.classList.add("active");
+        btn2.classList.remove("active");
+        btn3.classList.remove("active");
+        btn4.classList.remove("active");
+    }
+
+    btn2.onclick = function () {
+        slide.style.transform = "translateX(-100%)"
+        btn2.classList.add("active");
+        btn1.classList.remove("active");
+        btn3.classList.remove("active");
+        btn4.classList.remove("active");
+    }
+
+    btn3.onclick = function () {
+        slide.style.transform = "translateX(-200%)"
+        btn3.classList.add("active");
+        btn1.classList.remove("active");
+        btn2.classList.remove("active");
+        btn4.classList.remove("active");
+    }
+
+    btn4.onclick = function () {
+        slide.style.transform = "translateX(-300%)"
+        btn4.classList.add("active");
+        btn1.classList.remove("active");
+        btn2.classList.remove("active");
+        btn3.classList.remove("active");
+    }
+</script>
+
+</html>

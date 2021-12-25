@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/Sign_up.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+    <title>Client-List</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row">
+            <div class="col-md-12">
+                <h1 align="center">CLIENT-LIST</h1>  
+                <table class="table table-striped table-hover">
+                    <thead class="thead-dark">
+                    <tr>
+                        <th>First-Name</th>
+                        <th>Last-Name</th>
+                        <th>Contact No.</th>
+                        <th>Client-Query</th>
+                    </tr>
+                </thead>
+          
+                    {% for client in clients1%}
+                    <tr>
+                      <td>{{client.First}}</td>
+                      <td>{{client.Last}}</td>
+                      <td>{{client.Phone}}</td>
+                      <td>{{client.Query}}</td>
+                  </tr>
+                    {% endfor %}
+          
+                </table>
+            </div>
+        </div>
+    </div>     
+</body>
+</html>

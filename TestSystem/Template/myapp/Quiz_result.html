@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+{% load static %}
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" type="text/css" href="{% static 'fontawesome/css/all.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Css/Sign_up.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'Bootstrap/css/bootstrap.css' %}">
+    <title>Result</title>
+</head>
+<body>
+    <div class="container">
+        <div class="row m-5" >
+            <h1 style="color:red" align="Center">
+                Here is Your Result Check your Result!!!!
+            </h1>
+            <div class="row">
+                <img src="{% static 'Images/results.jpg'%}" alt="" srcset="">
+            </div>
+        </div>
+            <div class="card-body" align="Center">
+                <h5 class="card-title">Score: {{score}}</h5>
+ 
+                <p class="card-text">Percentage: {{percent}}%</p>
+                <p class="card-text">Time Taken: {{time}} seconds</p>
+                <p class="card-text">Correct answers: {{correct}}</p>
+                <p class="card-text">Incorrect answers: {{wrong}}</p>
+                <p class="card-text">Total questions: {{total}}</p>
+                <h5>All the best for next quiz!</h5>
+            </div>
+    </div>
+</body>
+</html>
